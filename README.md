@@ -1,6 +1,4 @@
 # Bart_Project
-data preprocessing and importing to postgresql
-
 
 The objective of this assignment is to create a Python script which loads the BART data into your local database. In order to receive full credit on this assignment you will need to write a Python Script which takes the raw Excel files and prepocess them and loads in the clean ridership data.
 
@@ -13,8 +11,8 @@ The objective of this assignment is to create a Python script which loads the BA
 * Reshape the data from wide format into a long table. The data in the Excel spreadsheets is presented in a wide format – each column represents the average exits for a particular station. The target table (“cls.bart”) is long, not wide; the data will require reshaping before it is copied in.
 
 ## workflow
-* get list of fully qualified paths of files in root directory
-* unzip all files in zip_dir and store them in unzip_dir and get the list containing fully qualified paths of unzipped files
+* Get list of fully qualified paths of files in root directory
+* Unzip all files in zip_dir and store them in unzip_dir and get the list containing fully qualified paths of unzipped files
 * Get month (int) and year (int) extracted from a string containing a month (name) and a year (numeric)
 * Use the fully qualified path of a file with BART data to create a data frame with the ridership data in long table format
 * Create a table in postgres using the information provided
